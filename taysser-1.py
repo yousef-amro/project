@@ -21,10 +21,8 @@ a = float(input("Enter side a: "))
 b = float(input("Enter side b: "))
 c = float(input("Enter side c: "))
 
-try:
-    print(classify_triangle(a, b, c))
-except ValueError as error:
-    print("Error:", error)
+
+print(classify_triangle(a, b, c))
 
 print()
 
@@ -57,21 +55,18 @@ coursework = float(input("Enter coursework mark (0-40): "))
 final = float(input("Enter final mark (0-60): "))
 attendance = float(input("Enter attendance % (0-100): "))
 
-try:
-    print(course_result(coursework, final, attendance))
-except ValueError as error:
-    print("Error:", error)
 
+print(course_result(coursework, final, attendance))
 print()
 
 
-# Function 3: FizzBuzz
+# Function 3: FizzBuzz لو الرقم بيقبل القسمه على ٥ و ٣ يبقا الكلمتين لو ٣ اول كلمه لو ٥ تاني كلمه
 
 def fizzbuzz(n):
     result = []
 
     for i in range(1, n + 1):
-        if i % 15 == 0:
+        if i % 15 == 0: #  if i % 5 == 0 and  if i % 3 == 0: ممكن كدا برضو
             result.append("FizzBuzz")
         elif i % 3 == 0:
             result.append("Fizz")
