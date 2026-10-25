@@ -1,4 +1,4 @@
-# Function 1: Unique In Order
+# -----------------------1
 
 def unique_in_order(values):
     seen = set()
@@ -16,7 +16,7 @@ print(unique_in_order("banana"))
 print()
 
 
-# Function 2: Word Frequencies
+# -----------------------2
 
 def word_frequencies(text):
     counts = {}
@@ -33,7 +33,7 @@ print(word_frequencies(""))
 print()
 
 
-# Function 3: Top K
+# -----------------------3
 
 def top_k(frequencies, k):
     ordered = sorted(frequencies.items(), key=lambda pair: (-pair[1], pair[0]))
@@ -45,7 +45,7 @@ print(top_k({"b": 2, "a": 3, "c": 5}, 2))
 print()
 
 
-# Function 4: Transpose
+# -----------------------4
 
 def transpose(matrix):
     if not matrix:
@@ -59,7 +59,7 @@ print(transpose([]))
 print()
 
 
-# Function 5: Invert
+# -----------------------5
 
 def invert(mapping):
     result = {}
@@ -75,7 +75,7 @@ print(invert({"a": 1, "b": 2, "c": 1}))
 print()
 
 
-# Function 6: Common Elements
+# -----------------------6
 
 def common_elements(first, second):
     return sorted(set(first) & set(second))
@@ -86,7 +86,7 @@ print(common_elements([3, 1, 2, 3], [3, 4, 1]))
 print()
 
 
-# Function 7: Group By Length
+# -----------------------7
 
 def group_by_length(words):
     groups = {}
@@ -100,7 +100,7 @@ print(group_by_length(["hi", "sun", "to", "sky"]))
 print()
 
 
-# Function 8: Bag
+# -----------------------8
 
 class Bag:
     def __init__(self, items=()):
@@ -163,7 +163,7 @@ print(b)
 print()
 
 
-# Function 9: Countdown
+# ----------------------9
 
 def countdown(n):
     while n > 0:
@@ -177,7 +177,8 @@ print(list(countdown(0)))
 print()
 
 
-# Function 10: Chunks
+# -----------------------10
+
 
 def chunks(values, size):
     if size < 1:
